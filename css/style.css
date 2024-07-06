@@ -26,19 +26,22 @@
 }
 
 
+.nav__link--hover{
+    transition: all 0.5s ease;
+}
+
+.nav__link--hover::after{
+    
+}
+
+
 
 menu {
     display: flex;
     gap: 50px;
 }
 
-.navigation > a, .nav__list > li > a {
-    transition: all 0.3s ease;
-}
 
-.navigation a:hover, .nav__list a:hover {
-    scale: 1.05;
-}
 
 .company-logo {
     width: 53px;
@@ -59,20 +62,24 @@ menu {
 }
 
 
+.hero-bg{
+    background-image: linear-gradient(to top, #566A82 0%, #566A82 50%, transparent 50.1%);
+}
 
 .hero {
-    box-shadow: -2px -2px 5px 0px #141D3D26;
-    box-shadow: 2px 2px 5px 0px #141D3D26;
+    box-shadow: 2px 2px 5px #141D3D26, -2px -2px 5px #141D3D26;
     border-radius: 30px;
     margin-top: 30px;
     padding: 50px 60px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .hero__content{
     display: flex;
     flex-direction: column;
+    max-width: 365px;
     gap: 20px;
     margin-top: 75px;
     color: var(--blue-text);
@@ -85,7 +92,7 @@ menu {
 }
 
 
-.hero__title span {
+.hero__title--light {
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
@@ -97,7 +104,6 @@ menu {
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
-    max-width: 365px;
 }
 
 .hero__img{
@@ -136,12 +142,14 @@ menu {
 }
 
 
-
-.conditions__title{
+.section__title {
     font-size: 48px;
     font-weight: 500;
     line-height: 56px;
     text-align: center;
+}
+
+.conditions__title{
     margin-bottom: 80px;
 }
 
@@ -163,4 +171,43 @@ menu {
     width: 282px;
     font-size: 24px;
     line-height: 28px;
+}
+
+
+.benefits-wrapper{
+    padding: 100px 0 59px;
+    background-color: #566A82;
+}
+
+.benefits__title {
+    color: white;
+    margin-bottom: 76px;
+}
+
+.benefits-list{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.benefits-card{
+    width: 160px;
+    height: 190px;
+    box-shadow: 0px 2px 18px 0px #2929291A, 0px -26px 0px #DDD0A4;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 34px 0;
+    box-sizing: border-box;
+}
+
+.benefits-card__text{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
 }
