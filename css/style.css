@@ -492,7 +492,7 @@ footer {
   margin-bottom: 110px;
 }
 
-.footer__email span {
+.footer__email a {
   font-size: 18px;
   font-style: italic;
   font-weight: 100;
