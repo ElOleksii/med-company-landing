@@ -135,3 +135,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+select::-ms-expand {
+  display: none;
+}

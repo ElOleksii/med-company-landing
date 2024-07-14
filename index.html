@@ -2284,17 +2284,50 @@
         </div>
       </div>
     </section>
-    <section class="container">
+    <section class="container feedback-wrapper">
       <h2 class="section__title">Уточнюйте деталі</h2>
       <p class="section__subtitle">
         Якщо Ви не знайшли відповідь на своє запитання, заповніть цю форму:
       </p>
       <div class="feedback">
-        <form action="" class="feedback__form"></form>
+        <form action="" class="feedback__form">
+          <label class="feedback__field" for="">
+            <p class="feedback__caption">ПІБ*</p>
+            <input
+              type="text"
+              required
+              placeholder="Шевченко Тарас Григорович"
+            />
+          </label>
+          <label class="feedback__field" for="">
+            <p class="feedback__caption">Номер телефону*</p>
+            <input type="text" required placeholder="+3 (067) 344 98 55" />
+          </label>
+          <label class="feedback__field" for="">
+            <p class="feedback__caption">Email*</p>
+            <input type="email" required placeholder="taras-poetry@gmail.com" />
+          </label>
+          <label class="feedback__field" for="">
+            <p class="feedback__caption">Місто*</p>
+            <div class="feedback__choice">
+              <select name="" class="feedback__input" id="" required>
+                <option value="Brovary">Бровари</option>
+                <option value="Brovary">Бровари</option>
+                <option value="Brovary">Бровари</option>
+                <option value="Brovary">Бровари</option>
+                <option value="Brovary">Бровари</option>
+              </select>
+            </div>
+          </label>
+
+          <label class="feedback__check">
+            <p class="feedback__caption"></p>
+            <input type="checkbox" checked name="" id="" />
+          </label>
+        </form>
         <div class="feedback__img">
           <svg
-            width="592"
-            height="607"
+            width="100%"
             viewBox="0 0 592 607"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
