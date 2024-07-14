@@ -503,6 +503,44 @@ menu {
   width: 50%;
 }
 
+.feedback__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear__btn {
+  margin-left: 40px;
+}
+
+.clear__btn:hover {
+  color: red;
+}
+
+.feedback__btn {
+  border: none;
+  background-color: white;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.submit__btn {
+  width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4a607a;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.submit__btn:hover {
+  background-color: #ddd0a4;
+  border: 1px solid #ddd0a4;
+  color: white;
+}
+
 footer {
   background-color: #4a607a;
   padding-top: 83px;
